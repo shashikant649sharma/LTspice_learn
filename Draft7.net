@@ -1,0 +1,15 @@
+* C:\Users\Vikra\AppData\Local\LTspice\Draft7.asc
+M4 S4 D3 Vout Vout PMOS
+M3 S4 D3 D3 D3 PMOS
+M1 D3 Vin1 N001 N001 NMOS
+M2 Vout Vin2 N001 N001 NMOS
+VDD S4 0 5
+M5 N001 Vb 0 0 NMOS
+V1 Vin1 Vin2 1
+V3 Vb 0 2.5
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Vikra\AppData\Local\LTspice\lib\cmp\standard.mos
+.tran .5
+.backanno
+.end
